@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Survey Form</h1>
+    <form id="surveyForm" action="submit.php" method="POST">
+      <div class="questions active">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <label for="destination">Preferred travel destination:</label>
+        <input type="text" id="destination" name="destination" required>
+      </div>
+      <div class="questions">
+        <label for="mode">Preferred mode of travel:</label>
+        <select id="mode" name="mode" required>
+          <option value="">Select one</option>
+          <option value="Air">Air</option>
+          <option value="Road">Road</option>
+          <option value="Train">Train</option>
+          <option value="Water">Water</option>
+        </select>
+        
+        <label for="date">Preferred travel date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="purpose">Purpose of your trip:</label>
+        <select id="purpose" name="purpose" required>
+          <option value="">Select one</option>
+          <option value="Business">Business</option>
+          <option value="Pleasure">Pleasure</option>
+        </select>
+        
+        <label for="budget">Preferred travel budget:</label>
+        <input type="text" id="budget" name="budget" required>
+      </div>
+      <div class="questions">
+        <label for="activities">Activities you would like to engage in:</label>
+        <textarea id="activities" name="activities" required></textarea>
+        
+        <label for="tour">Guided tour or self-drive option:</label>
+        <select id="tour" name="tour" required>
+          <option value="">Select one</option>
+          <option value="Guided tour">Guided tour</option>
+          <option value="Self-drive">Self-drive</option>
+        </select>
+        
+        <label for="group">Size of your travel group:</label>
+        <input type="number" id="group" name="group" required>
+        
+        <label for="diet">Dietary requirements or allergies:</label>
+        <textarea id="diet" name="diet"></textarea>
+      </div>
+      <div class="questions">
+        <label for="conditions">Medical conditions or physical limitations:</label>
+        <textarea id="conditions" name="conditions"></textarea>
+        
+        <label for="requests">Special requests for your trip:</label>
+        <textarea id="requests" name="requests"></textarea>
+        
+        <label for="traveled_before">Have you traveled with Tatu Tours and Travel before?</label>
+        <select id="traveled_before" name="traveled_before" required>
+          <option value="">Select one</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div class="questions">
+        <label for="hear_about">How did you hear about Tatu Tours and Travel?</label>
+        <input type="text" id="hear_about" name="hear_about" required>
+        
+        <label for="expectations">Expectations for this trip:</label>
+        <textarea id="expectations" name="expectations" required></textarea>
+      </div>
+      <div class="questions">
+        <label for="physical_activities">Are you interested in physically demanding activities?</label>
+        <select id="physical_activities" name="physical_activities" required>
+          <option value="">Select one</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        
+        <label for="travel_experience">How would you rate your travel experience?</label>
+        <select id="travel_experience" name="travel_experience" required>
+          <option value="">Select one</option>
+          <option value="Novice">Novice</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Experienced">Experienced</option>
+        </select>
+        
+        <label for="emergency_contact">Emergency contact information:</label>
+        <input type="text" id="emergency_contact" name="emergency_contact" required>
+        
+        <label for="additional_comments">Any additional comments:</label>
+        <textarea id="additional_comments" name="additional_comments"></textarea>
+      </div>
+      
+      <button type="button" id="prevBtn">Previous</button>
+      <button type="button" id="nextBtn">Next</button>
+      <button type="submit" id="submitBtn">Submit</button>
+      </form>
+      </div>
+      
+      <script src="script.js"></script>
+      </body>
+      </html>
+      
